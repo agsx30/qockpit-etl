@@ -28,6 +28,15 @@ A variável DOMAIN deve ser preenchida com o subdomínio do endereço utilizado 
 
 A variável API_TOKEN deve ser obtida na plataforma, no menu de configurações de integrações.
 
+As configurações padrão de acesso ao banco de dados podem ser definidas localmente, também no arquivo setup.cfg.
+
+    [FONTE]
+    DBMS=
+    HOST=
+    USER=
+    PASSWORD=
+    DATABASE=
+
 ## Serviços Disponíveis 
 
 ### Integração de Indicadores
@@ -56,6 +65,20 @@ Normalmente, em MacOS e Linux, o python encontra-se instalado por padrão.
 
 Para realizar a instalação do Python no Windows, acesse o link https://www.python.org/downloads/ para realizá-la.
 
+### Componente para Conexão com o MSSQL
+
+Para acesso ao Microsoft SQL Server, deve ser realizada a instalação do componente PYMSSQL.
+
+Seguir as instruções de instalação do link: http://www.pymssql.org/en/stable/intro.html#install
+
+### Componente para Conexão com o ORACLE
+
+Em construção
+
+### Componente para Conexão com o JDBC
+
+Em construção
+
 ## Instalação
 
 Faça o download do arquivo: https://github.com/agsx30/qockpit-etl/archive/master.zip
@@ -65,5 +88,14 @@ Descompate os arquivos, e na basta onde estão localizados os arquivos, realiza 
     python qockpit-teste.py
 
 Se a execução ocorrer com sucesso, pode programar as execuções de atualização como descrito no item "Serviços Disponíveis".
+
+# Segurança
+
+A utilização da API de integração do QOCKPIT apresenta uma estrutura segura devido as características abaixo:
+
+1. Os parâmetros de conexão com o banco de dados são definidos localmente.
+1. O código fonte do acesso ao banco de dados é aberto, podendo ser avaliado cada comando executado.
+1. Os scripts executados são logados e exibidos na tela durante a execução.
+1. A conexão com a plataforma é feita mediante token de autenticação gerado.
 
 
