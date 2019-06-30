@@ -52,8 +52,18 @@ Para realizar a integração dos indicadores de do mês anterior:
 
 Necessário ter instalado na máquina o python e o driver python de conexão com a fonte de dados selecionada.
 
+Normalmente, em MacOS e Linux, o python encontra-se instalado por padrão.
+
+Para realizar a instalação do Python no Windows, acesse o link https://www.python.org/downloads/ para realizá-la.
+
 ## Instalação
 
 Faça o download do arquivo: https://github.com/agsx30/qockpit-etl/archive/master.zip
+
+Descompate os arquivos, e na basta onde estão localizados os arquivos, realiza a configuração do arquivo setup.cfg e em seguinte pode realizar a execução do comando abaixo:
+
+    python qockpit-teste.py
+
+Se a execução ocorrer com sucesso, pode programar as execuções de atualização como descrito no item "Serviços Disponíveis".
 
 
