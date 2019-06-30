@@ -52,4 +52,8 @@ Para realizar a integração dos indicadores de do mês anterior:
 
 Necessário ter instalado na máquina o python e o driver python de conexão com a fonte de dados selecionada.
 
+## Instalação
+
+Faça o download do arquivo: https://github.com/agsx30/qockpit-etl/archive/master.zip
+
 
