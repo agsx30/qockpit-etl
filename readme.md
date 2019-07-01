@@ -55,7 +55,7 @@ Para realizar a integração dos indicadores de do mês anterior:
 
 1. Microsoft SQL Server
 1. ORACLE (Em construção)
-1. JDBC (Em construção)
+1. ODBC (Em construção)
 
 ## Requisitos
 
@@ -73,9 +73,11 @@ Seguir as instruções de instalação do link: http://www.pymssql.org/en/stable
 
 ### Componente para Conexão com o ORACLE
 
-Em construção
+Para acesso ao ORACLE, deve ser realizada a instalação do componente cx_Oracle.
 
-### Componente para Conexão com o JDBC
+Seguir as instruções de instalação do link: https://cx-oracle.readthedocs.io/en/latest/installation.html
+
+### Componente para Conexão com o ODBC
 
 Em construção
 

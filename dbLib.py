@@ -16,9 +16,19 @@ def db_get_data (item):
   check_config (config, 'database', item)
 
   if item['origem']['parms']['dbms'] == 'mssql':
-    x = mssqlDb(item['origem']['parms'])
-  
-  return x.execute(query)
+    driver = mssqlDb(item['origem']['parms'])
+
+  conn = driver.connect()
+  cursor = conn.cursor()
+  cursor.execute(query)
+
+  ret = {}
+
+  for row in cursor:
+    for idx, column in enumerate(row):
+      ret[cursor.description[idx][0]] = column
+    
+  return ret
 
 def check_config (parser, var, item):
   if var in parser['FONTE']:

@@ -79,6 +79,10 @@ for item in lista:
 
     if 'numerador' in ret.keys():
       params['numerador'] = ret['numerador'];
+    else:
+      print('Valor do numerador não retornado na query.')
+      print("=======")
+      continue
 
     if 'denominador' in ret.keys():
       params['denominador'] = ret['denominador'];
@@ -88,7 +92,7 @@ for item in lista:
     print("[Enviando...]")
     
     r = requests.post(url = item['endpoint'], 
-      headers={ "X-API-DOMAIN": "teste", "X-API-TOKEN": "T4EQNSVYPK4" }, 
+      headers={ "X-API-DOMAIN": DOMAIN, "X-API-TOKEN": API_TOKEN }, 
       params = params)
     print(r.content)
 

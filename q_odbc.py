@@ -1,6 +1,6 @@
-import pymssql
+import pyodbc
 
-class mssqlDb:
+class odbcDb:
 
   def __init__(self, parms):
     self.host = parms['host']
@@ -8,5 +8,5 @@ class mssqlDb:
     self.password = parms['password']
     self.database = parms['database']
 
-  def connect(self):
-    return pymssql.connect(host = self.host, user = self.user, password = self.password, database = self.database)
+  def execute(self, query):
+    return pyodbc.connect("DSN=" + self.host + ";UID=" + self.user + ";PWD=" + self.password)
