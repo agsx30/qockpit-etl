@@ -85,11 +85,11 @@ Em construção
 
 Faça o download do arquivo: https://github.com/agsx30/qockpit-etl/archive/master.zip
 
-Descompate os arquivos, e na basta onde estão localizados os arquivos, realiza a configuração do arquivo setup.cfg e em seguinte pode realizar a execução do comando abaixo:
+Descompate os arquivos, e na pasta onde estão localizados os arquivos, realiza a configuração do arquivo setup.cfg e em seguida, realizar a execução do comando abaixo:
 
     python qockpit-teste.py
 
-Se a execução ocorrer com sucesso, pode programar as execuções de atualização como descrito no item "Serviços Disponíveis".
+Se a execução ocorrer com sucesso, está pronto para programar as execuções de atualização como descrito no item "Serviços Disponíveis".
 
 # Segurança
 
