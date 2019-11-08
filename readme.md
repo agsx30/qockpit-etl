@@ -16,7 +16,7 @@ Inicialmente, deve-se realizar o cadastro das integrações desejadas na platafo
 Devem ser realizadas as configurações abaixo no arquvio setup.cfg.
 
     [API]
-    BASE_ENDPOINT=http://qockpit.io/api
+    BASE_ENDPOINT=https://qockpit.io/api
     DOMAIN=
     API_TOKEN=
 
