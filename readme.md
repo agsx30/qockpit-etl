@@ -28,10 +28,10 @@ A variável DOMAIN deve ser preenchida com o subdomínio do endereço utilizado 
 
 A variável API_TOKEN deve ser obtida na plataforma, no menu de configurações de integrações.
 
-As configurações padrão de acesso ao banco de dados podem ser definidas localmente, também no arquivo setup.cfg.
+As configurações padrão de acesso ao banco de dados podem ser definidas localmente, também no arquivo setup.cfg (gerado a partir do arquivo setup.example.cfg).
 
     [FONTE]
-    DBMS=
+    DBMS=mssql
     HOST=
     USER=
     PASSWORD=
