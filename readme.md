@@ -100,4 +100,8 @@ A utilização da API de integração do QOCKPIT apresenta uma estrutura segura 
 1. Os scripts executados são logados e exibidos na tela durante a execução.
 1. A conexão com a plataforma é feita mediante token de autenticação gerado.
 
+# Arquitetura
+
+    https://docs.google.com/presentation/d/14dwBvTlZL8gXyHu1_0t2nQKTAVZMr17LTa3HT3GlR1o/edit?usp=sharing
+
 
