@@ -104,4 +104,8 @@ A utilização da API de integração do QOCKPIT apresenta uma estrutura segura 
 
     https://docs.google.com/presentation/d/14dwBvTlZL8gXyHu1_0t2nQKTAVZMr17LTa3HT3GlR1o/edit?usp=sharing
 
+# Documentação da API
+
+    https://app.swaggerhub.com/apis/qockpit/QOCKPIT-API/1.0.0
+
 
