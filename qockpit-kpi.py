@@ -69,7 +69,7 @@ print("=======")
 lista = json.loads(r.content)
 
 for item in lista:
-  if item['origem']['id'] == 1:
+  if item['origem']['id'] > 0:
     print("[Buscando Indicador " + str( item['id'] ) + "...]")
 
     ret = db_get_data(item)
