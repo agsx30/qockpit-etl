@@ -32,8 +32,8 @@ def db_get_data (item):
 
 def check_config (parser, var, item):
   if var in parser['FONTE']:
-  	info = parser['FONTE'][var]
-  	if info:
+    info = parser['FONTE'][var]
+    if info:
   	  item['origem']['parms'][var] = info
 
 
